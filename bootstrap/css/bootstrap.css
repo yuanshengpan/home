@@ -4649,9 +4649,9 @@ input[type="button"].btn-block {
   font-size: 23px;
 }
 
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+/* .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
-}
+} */
 /* 修改过 */
 .navbar-light .navbar-nav .nav-link {
   /* color: rgba(0, 0, 0, 0.5); */
@@ -6793,8 +6793,8 @@ button.bg-danger:focus {
 /* 修改过 */
 .bg-light {
   /* background-color: #f8f9fa !important; */
-  background-color: rgba(0,0,0,0.3);
-  z-index: 100;
+  /* background-color: rgba(0,0,0,0.3);
+  z-index: 100; */
 }
 
 a.bg-light:hover, a.bg-light:focus,
