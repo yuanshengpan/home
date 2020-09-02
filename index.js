@@ -4,8 +4,8 @@ $(function () {
         // $(this).addClass('active').siblings().removeClass('active');
         $("html").animate({
             scrollTop: $(".clientHeight").eq($(this).index()).offset().top
-        })
-        // return false
+        },500)
+        return false
     });
     //高度自适应
     $(document).ready(function () {
@@ -38,8 +38,10 @@ $(function () {
         //     $("nav").addClass('bg-light');
         // }
         for (let i = 0; i < $(".clientHeight").length; i++) {
-            if ($(window).scrollTop() >= $(".clientHeight").eq(i).offset().top) {
-                $('.navbar-nav li').eq(i).addClass('active').siblings().removeClass('active');
+            if ($(window).scrollTop() + 20 >= $(".clientHeight").eq(i).offset().top) {
+                console.log($(window).scrollTop());
+                $('.navbar-nav li').removeClass('active');
+                $('.navbar-nav li').eq(i).addClass('active')
             }
         }
     });
