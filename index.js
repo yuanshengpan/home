@@ -32,14 +32,8 @@ $(function () {
     })
     //滑动高亮
     $(window).scroll(function () {
-        // if ($(window).scrollTop() == 0) {
-        //     $("nav").removeClass('bg-light');
-        // } else {
-        //     $("nav").addClass('bg-light');
-        // }
         for (let i = 0; i < $(".clientHeight").length; i++) {
             if ($(window).scrollTop() + 20 >= $(".clientHeight").eq(i).offset().top) {
-                console.log($(window).scrollTop());
                 $('.navbar-nav li').removeClass('active');
                 $('.navbar-nav li').eq(i).addClass('active')
             }
